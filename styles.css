@@ -1,0 +1,95 @@
+body {
+  text-align: center;
+  background-color: #0f3a68;
+  caret-color: transparent;
+}
+p{
+  font-family: "Kanit", sans-serif;
+  font-size: 1rem;
+  color: #FEF2BF;
+  font-weight: bolder;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: #FEF2BF;
+  animation: jump 1s ease-in-out forwards, jump 1s ease-in-out 1.1s forwards;
+  
+}
+
+a:link{
+  color:none;
+}
+
+#level-title {
+  font-family: "Kanit", sans-serif;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 10px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  /* border: 10px solid black; */
+  border-radius: 50%;
+}
+
+.game-over {
+  background-color: rgb(232, 76, 76);
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: lightblue;
+}
+
+/*Animaciones*/
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
